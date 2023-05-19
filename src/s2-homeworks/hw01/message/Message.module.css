@@ -1,31 +1,57 @@
 .message {
-
+    margin-right: 70px;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
 }
 
 .imageAndText {
-
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: end;
 }
 
 .imageAndText img {
-
+    max-height: 48px;
 }
 
 .text {
-
+    margin-right: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 7px 25px 8px;
+    border-radius: 7px;
+    background-color: #5f5569;
+    box-shadow: 0 0 7px #000;
+    color: white;
+    position: relative;
 }
 
-.text:after {
-
+.text::after {
+    content: '';
+    position: absolute;
+    right: -13px; bottom: 0; /* Положение треугольника */
+    border: 20px solid transparent; /* Прозрачные границы */
+    border-bottom: 20px solid rebeccapurple; /* Добавляем треугольник */
 }
 
 .name {
-
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
 }
 
 .messageText {
-
+    margin-top: 3px;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .time {
-
+    margin-top: 6px;
+    margin-right: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 12px;
 }
