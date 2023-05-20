@@ -30,9 +30,9 @@
 .friendText::after {
     content: '';
     position: absolute;
-    left: -13px; bottom: 0; /* Положение треугольника */
+    left: -13px; bottom: 0px; /* Положение треугольника */
     border: 20px solid transparent; /* Прозрачные границы */
-    border-bottom: 20px solid darkblue; /* Добавляем треугольник */
+    border-bottom: 20px solid #8b0025; /* Добавляем треугольник */
 }
 
 .friendName {
