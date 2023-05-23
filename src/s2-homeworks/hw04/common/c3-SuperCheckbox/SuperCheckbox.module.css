@@ -19,6 +19,9 @@
     background-repeat: no-repeat;
     background-position: center center;
 
+    background-color: #081407;
+    outline-color: #1a488b;
+
     /* background-size: 90% 90%; */
     vertical-align: middle;
     margin-right: 8px;
@@ -31,7 +34,7 @@
     appearance: none;
 
     background-image: url('checked.svg');
-    /*background: #99ff99;*/
+    /*background: #8b0025;*/
 }
 
 .checkbox:focus {
