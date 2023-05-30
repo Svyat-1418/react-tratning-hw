@@ -2,14 +2,15 @@
 }
 
 .wrapper {
-    max-width: 200px;
     display: flex;
-    justify-content: space-around;
     gap: 15px;
 }
 
 .number {
-    font-weight: 600;
-    font-size: 1.7rem;
+    font-weight: 700;
+    font-size: 1.2rem;
     line-height: 20px;
+    color: #000000;
+    margin-right: 10px;
+    margin-left: 10px;
 }
