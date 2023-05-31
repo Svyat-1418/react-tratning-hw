@@ -34,7 +34,6 @@ const HW13 = () => {
         axios
             .post(url, {success: x})
             .then((res) => {
-                //debugger
                 setCode('Код 200!')
                 setImage(success200)
                 // дописать
@@ -42,7 +41,6 @@ const HW13 = () => {
                 setInfo(res.data.info)
             })
             .catch((e) => {
-                debugger
                 // дописать
                 if (e.response.status === 500) {
                     setImage(error500)
