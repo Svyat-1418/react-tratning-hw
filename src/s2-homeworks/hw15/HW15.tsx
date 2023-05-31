@@ -51,9 +51,15 @@ const HW15 = () => {
         setLoading(true)
         getTechs(params)
             .then((res) => {
+                debugger
                 // делает студент
 
                 // сохранить пришедшие данные
+                if (res) {
+                    setTechs(res.data.techs)
+                    setTotalCount(res.data.totalCount)
+                    setLoading(false)
+                }
 
                 //
             })
@@ -61,26 +67,29 @@ const HW15 = () => {
 
     const onChangePagination = (newPage: number, newCount: number) => {
         // делает студент
-
-        // setPage(
-        // setCount(
-
-        // sendQuery(
-        // setSearchParams(
-
-        //
+        
+        if (newPage !== page) {
+            setCount(newCount)
+            setPage(newPage)
+            
+            sendQuery({page: newPage, count: newCount})
+            setSearchParams({page: newPage.toString(), count: newCount.toString()})
+        } else {
+            setPage(1)
+            setCount(newCount)
+            sendQuery({page: 1, count: newCount})
+            setSearchParams({page: '1', count: newCount.toString()})
+        }
     }
 
     const onChangeSort = (newSort: string) => {
         // делает студент
 
-        // setSort(
-        // setPage(1) // при сортировке сбрасывать на 1 страницу
-
-        // sendQuery(
-        // setSearchParams(
-
-        //
+        setSort(newSort)
+        setPage(1) // при сортировке сбрасывать на 1 страницу
+        
+        sendQuery({sort: newSort, count: count, page: page})
+        setSearchParams({page: page.toString(), count: count.toString(), sort: newSort.toString()})
     }
 
     useEffect(() => {
@@ -106,7 +115,7 @@ const HW15 = () => {
         <div id={'hw15'}>
             <div className={s2.hwTitle}>Homework #15</div>
 
-            <div className={s2.hw}>
+            <div className={`${s2.hw} ${s2.hw_15}`}>
                 {idLoading && <div id={'hw15-loading'} className={s.loading}>Loading...</div>}
 
                 <SuperPagination
