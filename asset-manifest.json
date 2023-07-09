@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-tratning-hw/static/css/main.f4a5f4c4.css",
-    "main.js": "/react-tratning-hw/static/js/main.2069149b.js",
+    "main.js": "/react-tratning-hw/static/js/main.c429486a.js",
     "static/js/787.48b9b365.chunk.js": "/react-tratning-hw/static/js/787.48b9b365.chunk.js",
     "static/media/avatar.png": "/react-tratning-hw/static/media/avatar.d947cb9d0d13765666b6.png",
     "static/media/200.svg": "/react-tratning-hw/static/media/200.2b4de1542921864a6ecb8c3301ea4670.svg",
@@ -18,11 +18,11 @@
     "static/media/arrowDown.svg": "/react-tratning-hw/static/media/arrowDown.84608c11f30550bbfe9dc58dff6d4ddb.svg",
     "static/media/arrowUp.svg": "/react-tratning-hw/static/media/arrowUp.3f53e1ada336d4a2b89dabfb878c65f9.svg",
     "main.f4a5f4c4.css.map": "/react-tratning-hw/static/css/main.f4a5f4c4.css.map",
-    "main.2069149b.js.map": "/react-tratning-hw/static/js/main.2069149b.js.map",
+    "main.c429486a.js.map": "/react-tratning-hw/static/js/main.c429486a.js.map",
     "787.48b9b365.chunk.js.map": "/react-tratning-hw/static/js/787.48b9b365.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f4a5f4c4.css",
-    "static/js/main.2069149b.js"
+    "static/js/main.c429486a.js"
   ]
 }
